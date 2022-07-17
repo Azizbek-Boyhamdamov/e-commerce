@@ -202,6 +202,37 @@ a{
   color: var(--text-dark-color);
 }
 
+
+.site-header__cart-link {
+  position: relative;
+  display: flex;
+  color: var(--text-color);
+}
+
+.site-header__cart-product-count{
+  position: absolute;
+  top: -6px;
+  left:  calc(100% - 13px);
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  line-height: normal;
+  padding: 1px 6px;
+  background-color: var(--accent-color);
+  border-radius: 7px;
+}
+
+.site-header__cart-link:hover .site-header__cart-icon {
+  color: var(--text-dark-color);
+}
+
+
+.site-header__cart-icon {
+  width: 22px;
+  height: 20px;
+  object-fit: contain;
+}
+
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
