@@ -1,5 +1,7 @@
 const modifiers = {
-  imgThumbnailActive:"image-showcase__thumbnail--active"
+  siteHeaderCardModalOpener:"site-header__cart-modal--open",
+  imgThumbnailActive:"image-showcase__thumbnail--active",
+  lightboxOpen:'lightbox--open'
 };
 
 const elSiteHeaderCartLink = document.querySelector('.js-site-header__cart-link');
@@ -11,11 +13,11 @@ if(elSiteHeaderCartLink){
   elSiteHeaderCartLink.addEventListener('click', function(evt){
     evt.preventDefault();
 
-    elSiteHeaderCartModal.classList.toggle('site-header__cart-modal--open');
+    elSiteHeaderCartModal.classList.toggle(modifiers.siteHeaderCardModalOpener);
   });
 }
 
-const elsImageShowcaseButton = document.querySelectorAll('.image-showcase__thumbnail-button');
+const elsImageShowcaseButton = document.querySelectorAll('.js-image-thumbnail-button');
 const elImageShowcaseBigImage = document.querySelector('.image-showcase__active-img');
 const elsImgShowcaseThumbnail = document.querySelectorAll('.image-showcase__thumbnail');
 
