@@ -94,30 +94,32 @@
         <!-- PRODUCR PAGE GALLERY -->
         <div class="product-page__gallery">
           <div class="image-showcase">
+
             <div class="image-showcase__showcase">
+              <button class="image-showcase__lightbox-toggle js-lightbox-toggler" type="button" aria-label="image gallery opener"></button>
               <img class="image-showcase__active-img" src="./image/image-showcase.jpg" alt="Fall Limited Edition Sneakers" srcset="./image/image-showcase.jpg 1x , ./image/image-showcase@2x.jpg 2x" >
             </div>
             <ul class="image-showcase__thumbnails">
-              <li class="image-showcase__thumbnail image-showcase__thumbnail--active">
-                <button class="image-showcase__thumbnail-button" type="button" aria-label="Sneakers-1" data-big-img="./image/image-showcase.jpg" data-big-img-retina="./image/image-showcase@2x.jpg">
+              <li class="image-showcase__thumbnail   image-showcase__thumbnail--active">
+                <button class="image-showcase__thumbnail-button js-image-thumbnail-button " type="button" aria-label="Sneakers-1" data-big-img="./image/image-showcase.jpg" data-big-img-retina="./image/image-showcase@2x.jpg">
                   <img class="image-showcase__thumbnail-image" src="./image/image-showcase-1thumbnail.jpg" alt="Sneakers-1" width="88" height="88" srcset="./image/image-showcase-1thumbnail.jpg 1x , ./image/image-showcase-1thumbnail@2x.jpg 2x">
                 </button>
               </li>
 
-              <li class="image-showcase__thumbnail">
-                <button class="image-showcase__thumbnail-button" type="button" aria-label="Sneakers-2" data-big-img="./image/image-showcase-2.jpg" data-big-img-retina="./image/image-showcase-2@2x.jpg">
+              <li class="image-showcase__thumbnail  ">
+                <button class="image-showcase__thumbnail-button js-image-thumbnail-button" type="button" aria-label="Sneakers-2" data-big-img="./image/image-showcase-2.jpg" data-big-img-retina="./image/image-showcase-2@2x.jpg">
                   <img class="image-showcase__thumbnail-image" src="./image/image-showcase-2thumbnail.jpg" alt="Sneakers-2" width="88" height="88" srcset="./image/image-showcase-2thumbnail.jpg 1x , ./image/image-showcase-2thumbnail@2x.jpg 2x">
                 </button>
               </li>
 
-              <li class="image-showcase__thumbnail">
-                <button class="image-showcase__thumbnail-button" type="button" aria-label="Sneakers-3" data-big-img="./image/image-showcase-3.jpg" data-big-img-retina="./image/image-showcase-3@2x.jpg">
+              <li class="image-showcase__thumbnail  ">
+                <button class="image-showcase__thumbnail-button js-image-thumbnail-button" type="button" aria-label="Sneakers-3" data-big-img="./image/image-showcase-3.jpg" data-big-img-retina="./image/image-showcase-3@2x.jpg">
                   <img class="image-showcase__thumbnail-image" src="./image/image-showcase-3thumbnail.jpg" alt="Sneakers-3" width="88" height="88" srcset="./image/image-showcase-3thumbnail.jpg 1x , ./image/image-showcase-3thumbnail@2x.jpg 2x">
                 </button>
               </li>
 
-              <li class="image-showcase__thumbnail">
-                <button class="image-showcase__thumbnail-button" type="button" aria-label="Sneakers-4" data-big-img="./image/image-showcase-4.jpg" data-big-img-retina="./image/image-showcase-4@2x.jpg">
+              <li class="image-showcase__thumbnail  ">
+                <button class="image-showcase__thumbnail-button js-image-thumbnail-button" type="button" aria-label="Sneakers-4" data-big-img="./image/image-showcase-4.jpg" data-big-img-retina="./image/image-showcase-4@2x.jpg">
                   <img class="image-showcase__thumbnail-image" src="./image/image-showcase-4thumbnail.jpg" alt="Sneakers-4" width="88" height="88" srcset="./image/image-showcase-4thumbnail.jpg 1x , ./image/image-showcase-4thumbnail@2x.jpg 2x">
                 </button>
               </li>
@@ -131,6 +133,62 @@
       </div>
     </div>
   </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox ">
+    <div class="lightbox__inner">
+      <!-- LIGHTBOX CLOSE BUTTON -->
+      <button class="lightbox__close js-lightbox-close-toggler" type="button" aria-label="Close Lighbox">
+        <svg class="lightbox__close-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.857 17.143 0 10 7.143 2.857 0 0 2.857 7.143 10 0 17.143 2.857 20 10 12.857 17.143 20 20 17.143 12.857 10 20 2.857Z" fill="currentColor"/></svg>
+      </button>
+
+      <div class="image-showcase image-showcase--lightbox">
+        <div class="image-showcase__showcase">
+          <!-- IMAGE-SHOWCASE-CONTROL -->
+        <button class="image-showcase__control image-showcase__control-prev" type="button" aria-label="Previous">
+          <span class="imahe-showcase__control-inner">
+            <svg class="image-showcase__control-icon" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11 2-8 8 8 8" stroke="currentColor" stroke-width="3"/></svg>
+          </span>
+        </button>
+
+        <button class="image-showcase__control image-showcase__control-next" type="button" aria-label="Next">
+          <span class="imahe-showcase__control-inner">
+            <svg class="image-showcase__control-icon" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8-8 8" stroke="currentColor" stroke-width="3"/></svg>
+          </span>
+        </button>
+
+          <img class="image-showcase__active-img" src="./image/image-showcase.jpg" alt="Fall Limited Edition Sneakers" srcset="./image/image-showcase.jpg 1x , ./image/image-showcase@2x.jpg 2x" >
+        </div>
+        <ul class="image-showcase__thumbnails">
+          <li class="image-showcase__thumbnail  image-showcase__thumbnail--active">
+            <button class="image-showcase__thumbnail-button js-image-lightbox-button" type="button" aria-label="Sneakers-1" data-big-img="./image/image-showcase.jpg" data-big-img-retina="./image/image-showcase@2x.jpg">
+              <img class="image-showcase__thumbnail-image" src="./image/image-showcase-1thumbnail.jpg" alt="Sneakers-1" width="88" height="88" srcset="./image/image-showcase-1thumbnail.jpg 1x , ./image/image-showcase-1thumbnail@2x.jpg 2x">
+            </button>
+          </li>
+
+          <li class="image-showcase__thumbnail ">
+            <button class="image-showcase__thumbnail-button js-image-lightbox-button" type="button" aria-label="Sneakers-2" data-big-img="./image/image-showcase-2.jpg" data-big-img-retina="./image/image-showcase-2@2x.jpg">
+              <img class="image-showcase__thumbnail-image" src="./image/image-showcase-2thumbnail.jpg" alt="Sneakers-2" width="88" height="88" srcset="./image/image-showcase-2thumbnail.jpg 1x , ./image/image-showcase-2thumbnail@2x.jpg 2x">
+            </button>
+          </li>
+
+          <li class="image-showcase__thumbnail ">
+            <button class="image-showcase__thumbnail-button js-image-lightbox-button" type="button" aria-label="Sneakers-3" data-big-img="./image/image-showcase-3.jpg" data-big-img-retina="./image/image-showcase-3@2x.jpg">
+              <img class="image-showcase__thumbnail-image" src="./image/image-showcase-3thumbnail.jpg" alt="Sneakers-3" width="88" height="88" srcset="./image/image-showcase-3thumbnail.jpg 1x , ./image/image-showcase-3thumbnail@2x.jpg 2x">
+            </button>
+          </li>
+
+          <li class="image-showcase__thumbnail ">
+            <button class="image-showcase__thumbnail-button js-image-lightbox-button" type="button" aria-label="Sneakers-4" data-big-img="./image/image-showcase-4.jpg" data-big-img-retina="./image/image-showcase-4@2x.jpg">
+              <img class="image-showcase__thumbnail-image" src="./image/image-showcase-4thumbnail.jpg" alt="Sneakers-4" width="88" height="88" srcset="./image/image-showcase-4thumbnail.jpg 1x , ./image/image-showcase-4thumbnail@2x.jpg 2x">
+            </button>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/main.js"></script>
 </body>

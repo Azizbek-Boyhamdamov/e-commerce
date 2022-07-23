@@ -41,3 +41,21 @@ elsImageShowcaseButton.forEach(function(elImageShowcaseButton){
     elImageShowcaseBigImage.srcset = `${elImageShowcaseButton.dataset.bigImg} 1x, ${elImageShowcaseButton.dataset.bigImgRetina} 2x`;
   });
 });
+
+// LIGHTBOX
+
+const elLightbox = document.querySelector('.lightbox');
+const elLightboxToggler = document.querySelector('.js-lightbox-toggler');
+const elLightboxClose = document.querySelector('.js-lightbox-close-toggler');
+
+if(elLightboxToggler){
+  elLightboxToggler.addEventListener('click', function(){
+    elLightbox.classList.add(modifiers.lightboxOpen);
+  });
+}
+
+if(elLightboxClose){
+  elLightboxClose.addEventListener('click', function(){
+    elLightbox.classList.remove(modifiers.lightboxOpen);
+  });
+}
