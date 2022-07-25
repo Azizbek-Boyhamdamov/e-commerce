@@ -148,6 +148,7 @@ a{
   display: inline-block;
   padding: 0;
   margin: 0;
+  border:0;
   border-radius: 10px;
   font-size: 16px;
   line-height: 1;
@@ -663,7 +664,6 @@ a{
 .product-page__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   max-width: 1063px;
 }
 
@@ -674,6 +674,119 @@ a{
 .product-page__info {
   width: 100%;
   max-width: 445px;
+  padding-top: 62px;
+}
+
+.product-info__manufacturer {
+  margin-bottom: 27px;
+  font-size: 13px;
+  line-height: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.product-info__title {
+  font-size: 48px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: var(--text-dark-color);
+}
+
+.product-info__desc {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.product-info__price-wrapper {
+  display: flex;
+  align-items: center;
+}
+.product-info__price {
+  margin: 0;
+  margin-right: 16px;
+  margin-bottom: 3px;
+  font-size: 28px;
+  line-height: normal;
+  font-weight: bold;
+  color: var(--text-dark-color);
+}
+
+.badge {
+  padding: 3.5px 9.5px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: normal;
+  color: var(--accent-color);
+  background-color:var(--accent-color-light);
+}
+
+.product-info__price-old{
+  display: block;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--text-light-color);
+}
+
+.product-info__cart-actions {
+  display: flex;
+}
+
+.product-info__quantity-wrapper {
+  display: flex;
+  width: 157px;
+  margin-right: 16px;
+  border-radius: 10px;
+  background-color:var(--light-bg) ;
+}
+
+.product-info__quantity-button {
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: var(--accent-color);
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.4s ease;
+}
+
+.product-info__quantity-button:hover{
+  color: var(--accent-color-hover);
+}
+
+.product-info__quantity-button:active{
+  background-color: var(--accent-color-hover);
+  color: #fff;
+}
+
+.product-info__icon{
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+
+.product-info__quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding-left: 29px;
+  padding-right: 29px;
+  font-weight: bold;
+  color: var(--text-dark-color);
 }
 
 
